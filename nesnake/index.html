@@ -1,10 +1,18 @@
 <html>
 <head>
 	<script type="text/javascript" src="https://unpkg.com/jsnes/dist/jsnes.min.js"></script>
+	<script type="text/javascript" src="nes-embed.js"></script>
+	<script>
+		window.onload = function(){
+			nes_load_url("nes-canvas", "https://github.com/cyborgx37/nesnake/raw/master/bin/snake.6502.nes");
+		}
+	</script>
 </head>
 <body>
-<h1>Try NESnake!</h1>
-<br>
-<em>Coming VERY Soon!</em>
+	<h1>Try NESnake!</h1>
+	<div style="margin: auto; width: 75%;">
+		<canvas id="nes-canvas" width="256" height="240" style="width: 100%"/>
+	</div>
+	<p>DPad: Arrow keys<br/>Start: Return, Select: Tab<br/>A Button: A, B Button: S</p>
 </body>
 </html>
